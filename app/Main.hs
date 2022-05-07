@@ -4,9 +4,9 @@ import System.Random
 
 main = do
   rg <- getStdGen
-  interact $ mockify rg
+  interact $ mock rg
 
-mockify :: StdGen -> String -> String
-mockify g = zipWith (\b c -> if b then toUpper c else c) rs . map toLower
+mock :: StdGen -> String -> String
+mock g = zipWith (\b c -> if b then toUpper c else c) rs . map toLower
   where
     rs = randoms g
