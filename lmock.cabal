@@ -9,7 +9,7 @@ synopsis: Mocks input with random upper-and-lowercase
 -- description:
 
 -- A URL where users can report bugs.
-bug-reports: 
+bug-reports: https://github.com/ginger51011/lmock/issues
 
 -- The license under which the package is released.
 license:            MIT
